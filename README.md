@@ -3,11 +3,11 @@
 createdb jogchat;
 
 CREATE TABLE jogchat.users(
-   id UUID PRIMARY KEY DEFAULT,
+   id UUID PRIMARY KEY,
    username TEXT,
    email TEXT,
    password TEXT,
-   activate boolean,
+   activate boolean
 );
 
 CREATE TABLE companies(
