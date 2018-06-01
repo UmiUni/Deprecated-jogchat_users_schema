@@ -39,7 +39,7 @@ CREATE DATABASE jogchat;
 ```
 
 ## How to set new password for postgres:
-[postgres_start_guide]http://suite.opengeo.org/docs/latest/dataadmin/pgGettingStarted/firstconnect.html
+[postgres_start_guide](http://suite.opengeo.org/docs/latest/dataadmin/pgGettingStarted/firstconnect.html)
 ```
 Run the psql command from the postgres user account:
 Set the password:
