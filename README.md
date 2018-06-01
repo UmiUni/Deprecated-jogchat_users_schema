@@ -30,3 +30,15 @@ CREATE DATABASE jogchat;
 \dt
 \c jogchat;
 
+
+Run the psql command from the postgres user account:
+
+sudo -u postgres psql postgres
+Set the password:
+
+\password postgres
+Enter a password.
+
+Close psql.
+
+\q
