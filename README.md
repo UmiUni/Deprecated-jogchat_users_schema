@@ -11,15 +11,15 @@ CREATE TABLE jogchat.users(
 );
 
 CREATE TABLE companies(
-   id UUID PRIMARY KEY DEFAULT,
+   id UUID PRIMARY KEY,
    email TEXT,
-   name TEXT,
+   name TEXT
 )
 
-CREATE TABLE edu(
-   id UUID PRIMARY KEY DEFAULT,
+CREATE TABLE edus(
+   id UUID PRIMARY KEY,
    email TEXT,
-   name TEXT,
+   name TEXT
 )
 
 References:
