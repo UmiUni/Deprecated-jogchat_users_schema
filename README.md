@@ -10,6 +10,17 @@ CREATE TABLE jogchat.users(
    activate boolean,
 );
 
+CREATE TABLE companies(
+   id UUID PRIMARY KEY DEFAULT,
+   email TEXT,
+   name TEXT,
+)
+
+CREATE TABLE edu(
+   id UUID PRIMARY KEY DEFAULT,
+   email TEXT,
+   name TEXT,
+)
 
 References:
 https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/
