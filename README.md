@@ -52,8 +52,7 @@ Enter a password.
 Close psql.
 \q
 ```
-
-# Postgres
-*[godoc pq](https://godoc.org/github.com/lib/pq)
-
-
+# References:
+* [UUID Postgres](https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/) 
+* [How to install postgres](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
+* [Go auth example] (https://github.com/sohamkamani/go-password-auth-example)
