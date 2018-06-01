@@ -1,5 +1,7 @@
 # jogchat_postgres
 
+Schema:
+
 createdb jogchat;
 
 CREATE TABLE jogchat.users(
@@ -29,7 +31,14 @@ How to install postgres:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
 
 
+Server JogchatPostgres:
+
+ip:
+206.189.212.172
+
 Connect to database:
+sudo -u postgres psql postgres
+
 CREATE DATABASE jogchat;
 \dt
 \c jogchat;
@@ -39,16 +48,9 @@ CREATE DATABASE jogchat;
 How to set new password for postgres:
 http://suite.opengeo.org/docs/latest/dataadmin/pgGettingStarted/firstconnect.html
 Run the psql command from the postgres user account:
-
-sudo -u postgres psql postgres
 Set the password:
-
 \password postgres
 Enter a password.
-
 Close psql.
-
 \q
 
-jogchat postgres table ip:
-206.189.212.172
