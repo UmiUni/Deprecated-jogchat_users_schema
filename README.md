@@ -4,7 +4,7 @@ createdb jogchat;
 
 CREATE TABLE jogchat.users(
    id UUID PRIMARY KEY DEFAULT,
-   nickname TEXT,
+   username TEXT,
    email TEXT,
    password TEXT,
    activate boolean,
