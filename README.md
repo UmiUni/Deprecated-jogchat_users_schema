@@ -49,3 +49,6 @@ Enter a password.
 Close psql.
 
 \q
+
+jogchat postgres table ip:
+206.189.212.172
