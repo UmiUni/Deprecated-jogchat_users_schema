@@ -1,5 +1,8 @@
 # jogchat_postgres
 
+# Install postgres on Ubuntu 16.04:
+* [How to install postgres](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
+
 # Schema:
 
 ```postgres
@@ -25,6 +28,7 @@ CREATE TABLE edus(
    name TEXT
 )
 ```
+* [UUID Postgres](https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/) 
 
 # Server JogchatPostgres:
 ip: 206.189.212.172
@@ -48,7 +52,8 @@ Enter a password.
 Close psql.
 \q
 ```
-# References:
-* [UUID Postgres](https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/) 
-* [How to install postgres](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
+
+# Postgres
+*[godoc pq](https://godoc.org/github.com/lib/pq)
+
 
