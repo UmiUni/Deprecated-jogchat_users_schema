@@ -1,7 +1,8 @@
 # jogchat_postgres
 
-Schema:
+# Schema:
 
+```postgres
 createdb jogchat;
 
 CREATE TABLE jogchat.users(
@@ -23,29 +24,20 @@ CREATE TABLE edus(
    email TEXT,
    name TEXT
 )
+```
 
-References:
-https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/
-
-How to install postgres:
-https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04
-
-
-Server JogchatPostgres:
-
+# Server JogchatPostgres:
 ip:
 206.189.212.172
 
-Connect to database:
+# Connect to database:
 sudo -u postgres psql postgres
 
 CREATE DATABASE jogchat;
 \dt
 \c jogchat;
 
-
-
-How to set new password for postgres:
+## How to set new password for postgres:
 http://suite.opengeo.org/docs/latest/dataadmin/pgGettingStarted/firstconnect.html
 Run the psql command from the postgres user account:
 Set the password:
@@ -53,4 +45,8 @@ Set the password:
 Enter a password.
 Close psql.
 \q
+
+# References:
+[UUID Postgres](https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/) 
+[How to install postgres](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
 
