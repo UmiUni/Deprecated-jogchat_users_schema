@@ -31,7 +31,7 @@ CREATE TABLE edus(
 * [UUID Postgres](https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/) 
 
 # Server JogchatPostgres:
-ip: 206.189.212.172
+ip: 206.189.212.172:5432
 
 # Connect to database:
 ```
