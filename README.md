@@ -28,7 +28,7 @@ CREATE TABLE schools(
    category TEXT,
    domain TEXT,
    name TEXT
-)
+);
 ```
 * [UUID Postgres](https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/) 
 
