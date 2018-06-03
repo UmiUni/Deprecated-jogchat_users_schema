@@ -46,8 +46,8 @@ ip: 206.189.212.172:5432
 sudo -u postgres psql postgres
 
 CREATE DATABASE jogchat;
-\dt
 \c jogchat;
+\dt
 ```
 
 ## How to set new password for postgres:
