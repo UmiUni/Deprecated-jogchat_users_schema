@@ -19,15 +19,14 @@ CREATE TABLE jogchat.users(
 CREATE TABLE companies(
    id UUID PRIMARY KEY,
    category TEXT,
-   email TEXT,
+   domain TEXT,
    name TEXT
-   
 )
 
 CREATE TABLE schools(
    id UUID PRIMARY KEY,
    category TEXT,
-   email TEXT,
+   domain TEXT,
    name TEXT
 )
 ```
