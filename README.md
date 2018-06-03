@@ -18,17 +18,25 @@ CREATE TABLE jogchat.users(
 
 CREATE TABLE companies(
    id UUID PRIMARY KEY,
+   category TEXT,
    email TEXT,
    name TEXT
+   
 )
 
-CREATE TABLE edus(
+CREATE TABLE schools(
    id UUID PRIMARY KEY,
+   category TEXT,
    email TEXT,
    name TEXT
 )
 ```
 * [UUID Postgres](https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/) 
+
+# How to drop tables:
+```
+DROP TABLE table0, table1 ...;
+```
 
 # Server JogchatPostgres:
 ip: 206.189.212.172:5432
