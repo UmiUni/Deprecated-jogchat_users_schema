@@ -21,7 +21,7 @@ CREATE TABLE companies(
    category TEXT,
    domain TEXT,
    name TEXT
-)
+);
 
 CREATE TABLE schools(
    id UUID PRIMARY KEY,
