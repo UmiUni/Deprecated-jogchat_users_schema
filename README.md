@@ -1,6 +1,5 @@
 # jogchat_postgres
 
-
 # How to allow remote connections to PostgreSQL database server
 [Remote connections to PostgreSQL database server] (https://bosnadev.com/2015/12/15/allow-remote-connections-postgresql-database-server/)
 
