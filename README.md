@@ -1,5 +1,10 @@
 # jogchat_postgres
 
+
+# How to allow remote connections to PostgreSQL database server
+[Remote connections to PostgreSQL database server] (https://bosnadev.com/2015/12/15/allow-remote-connections-postgresql-database-server/)
+
+
 # Install postgres on Ubuntu 16.04:
 * [How to install postgres](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04)
 
