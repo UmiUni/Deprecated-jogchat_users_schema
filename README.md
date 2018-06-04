@@ -2,6 +2,17 @@
 
 # How to allow remote connections to PostgreSQL database server
 [Remote connections to PostgreSQL database server] (https://bosnadev.com/2015/12/15/allow-remote-connections-postgresql-database-server/)
+* grep listen /etc/postgresql/9.5/main/postgresql.conf  
+* listen_addresses = 'localhost'		# what IP address(es) to listen on;
+* vim /etc/postgresql/9.5/main/pg_hba.conf
+* add new line:
+```
+host all all 0.0.0.0/0 md5
+```
+* restart
+```
+/etc/init.d/postgresql restart
+```
 
 * how to connect to remote postgres using commands
 ```
