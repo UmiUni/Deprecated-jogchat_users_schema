@@ -28,26 +28,48 @@ psql -h 206.189.212.172 -U postgres -d jogchat
 createdb jogchat;
 
 CREATE TABLE users(
-   id UUID PRIMARY KEY,
+   id BINARY(16) PRIMARY KEY,
    username TEXT,
    email TEXT,
+   phone INT(10),
    password TEXT,
    activate boolean
 );
 
 CREATE TABLE companies(
-   id UUID PRIMARY KEY,
+   id BINARY(16) PRIMARY KEY,
    category TEXT,
    domain TEXT,
    name TEXT
 );
 
 CREATE TABLE schools(
-   id UUID PRIMARY KEY,
+   id BINARY(16) PRIMARY KEY,
    category TEXT,
    domain TEXT,
    name TEXT
 );
+```
+
+
+```
+Cell
+DROP TABLE IF EXISTS cell;
+
+SHOW WARNINGS;
+
+CREATE TABLE cell
+(
+    added_at         INTEGER PRIMARY KEY AUTO_INCREMENT,
+    row_key          VARCHAR(36) NOT NULL,
+    column_name      VARCHAR(64) NOT NULL,
+    ref_key          INTEGER NOT NULL,
+    body             JSON,
+    created_at       DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE `cell_idx`(`row_key`, `column_name`, `ref_key`)
+) ENGINE=InnoDB;
+
+SHOW WARNINGS;
 ```
 * [UUID Postgres](https://starkandwayne.com/blog/uuid-primary-keys-in-postgresql/) 
 
