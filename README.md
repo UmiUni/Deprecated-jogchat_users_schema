@@ -51,7 +51,14 @@ CREATE TABLE schools(
 );
 ```
 
-Index
+# Index table
+```
+CREATE TABLE index_email (
+    email VARCHAR(60) NOT NULL,
+    entity_id BINARY(16) NOT NULL UNIQUE,
+    PRIMARY KEY (email, entity_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 
 ```
 Cell
