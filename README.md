@@ -51,6 +51,7 @@ CREATE TABLE schools(
 );
 ```
 
+Index
 
 ```
 Cell
@@ -61,7 +62,7 @@ SHOW WARNINGS;
 CREATE TABLE cell
 (
     added_at         INTEGER PRIMARY KEY AUTO_INCREMENT,
-    row_key          VARCHAR(36) NOT NULL,
+    row_key          BINARY(16) NOT NULL,
     column_name      VARCHAR(64) NOT NULL,
     ref_key          INTEGER NOT NULL,
     body             JSON,
